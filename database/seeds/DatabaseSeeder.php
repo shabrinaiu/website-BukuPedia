@@ -45,5 +45,16 @@ class DatabaseSeeder extends Seeder
             ['name' => 'OVO'],
             ['name' => 'Cash On Delivery']
         ]);
+        /**
+         * Seeding book category
+         */
+        DB::table('book_category')->insert([
+            ['name' => 'Novel'],
+            ['name' => 'Non-Fiction'],
+            ['name' => 'Fiction'],
+            ['name' => 'Comic'],
+            ['name' => 'Biography'],
+            ['name' => 'Kids'],
+        ]);
     }
 }

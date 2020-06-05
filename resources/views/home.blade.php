@@ -184,7 +184,7 @@
 					<!-- section title -->
 					<div class="col-md-12">
 						<div class="section-title">
-							<h3 class="title">Top selling</h3>
+							<h3 class="title">OUR PRODUCTS</h3>
 						</div>
 					</div>
 					<!-- /section title -->
@@ -197,76 +197,18 @@
 								<div id="tab1" class="tab-pane fade in active">
 									<div class="products-slick" data-nav="#slick-nav-1">
 										<!-- product -->
-										<div class="product">
-											<div class="product-img">
-												<img src="./img/kids/kids1.jpg" alt="">
+										@foreach ($books as $book)
+											<div class="product">
+												<div class="product-img">
+													<img src="{{ asset($book->image) }}" alt="">
+												</div>
+												<div class="product-body">
+													<p class="product-category">{{$book->category->name}}</p>
+													<h3 class="product-name"><a href="#">{{$book->title}}</a></h3>
+													<h4 class="product-price">Rp. {{$book->price}}</h4>
+												</div>
 											</div>
-											<div class="product-body">
-												<p class="product-category">Novel</p>
-												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
-											</div>
-										</div>
-										<!-- /product -->
-										<!-- product -->
-										<div class="product">
-											<div class="product-img">
-												<img src="./img/kids/kids1.jpg" alt="">
-											</div>
-											<div class="product-body">
-												<p class="product-category">Novel</p>
-												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
-											</div>
-										</div>
-										<!-- /product -->
-										<!-- product -->
-										<div class="product">
-											<div class="product-img">
-												<img src="./img/kids/kids1.jpg" alt="">
-											</div>
-											<div class="product-body">
-												<p class="product-category">Novel</p>
-												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
-											</div>
-										</div>
-										<!-- /product -->
-										<!-- product -->
-										<div class="product">
-											<div class="product-img">
-												<img src="./img/kids/kids1.jpg" alt="">
-											</div>
-											<div class="product-body">
-												<p class="product-category">Novel</p>
-												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
-											</div>
-										</div>
-										<!-- /product -->
-										<!-- product -->
-										<div class="product">
-											<div class="product-img">
-												<img src="./img/kids/kids1.jpg" alt="">
-											</div>
-											<div class="product-body">
-												<p class="product-category">Novel</p>
-												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
-											</div>
-										</div>
-										<!-- /product -->
-										<!-- product -->
-										<div class="product">
-											<div class="product-img">
-												<img src="./img/kids/kids1.jpg" alt="">
-											</div>
-											<div class="product-body">
-												<p class="product-category">Novel</p>
-												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
-											</div>
-										</div>
+										@endforeach
 										<!-- /product -->
 									</div>
 									<div id="slick-nav-1" class="products-slick-nav"></div>

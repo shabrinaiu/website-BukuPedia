@@ -16,12 +16,12 @@
 						<div class="product-preview">
 							<img src="./img/kids/kids1.jpg" alt="">
 						</div>
-						<div class="carousel-product-preview">
+						{{-- <div class="carousel-product-preview">
 							<img src="./img/kids/kids2.jpg" alt="">
 						</div>
 						<div class="product-preview">
 							<img src="./img/kids/kids3.jpg" alt="">
-						</div>
+						</div> --}}
 					</div>
 				</div>
 				<!-- /Product main img -->
@@ -32,12 +32,12 @@
 						<div class="carousel-product-preview">
 							<img src="./img/kids/kids1.jpg" alt="">
 						</div>
-						<div class="carousel-product-preview">
+						{{-- <div class="carousel-product-preview">
 							<img src="./img/kids/kids2.jpg" alt="">
 						</div>
 						<div class="carousel-product-preview">
 							<img src="./img/kids/kids3.jpg" alt="">
-						</div>
+						</div> --}}
 					</div>
 				</div>
 				<!-- /Product thumb imgs -->

@@ -17,7 +17,7 @@ class BookController extends Controller
     public function index()
     {
         $books = Book::get();
-        return BookResource::collection($books);
+        return view('home', ['books' => $books]);
     }
 
     /**
@@ -48,7 +48,7 @@ class BookController extends Controller
         $book->publisher_id = $request->publisher_id;
         $book->stock = $request->stock;
         $book->price = $request->price;
-        $book->image = "img/book_image/".$fileName;
+        $book->image = "/img/book_image/".$fileName;
         $book->save();
         return new BookResource($book);
     }
@@ -96,7 +96,7 @@ class BookController extends Controller
         $book->publisher_id = $request->publisher_id;
         $book->stock = $request->stock;
         $book->price = $request->price;
-        $book->image = "img/book_image/".$fileName;
+        $book->image = "/img/book_image/".$fileName;
         $book->save();
         return new BookResource($book);
     }
