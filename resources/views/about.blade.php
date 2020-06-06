@@ -2,7 +2,7 @@
 
 @section('section')
 
-@include('partials.breadcrumbs')
+@include('partials.breadcrumbs', ['direct' => 'About'])
 
 <div class="section">
     <!-- container -->

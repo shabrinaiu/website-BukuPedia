@@ -2,7 +2,7 @@
 
 @section('section')
 
-@include('partials.breadcrumbs')
+@include('partials.breadcrumbs', ['direct' => 'Product'])
 
 	<!-- SECTION -->
 	<div class="section">
@@ -30,7 +30,7 @@
 				<div class="col-md-2  col-md-pull-5">
 					<div id="product-imgs">
 						<div class="carousel-product-preview">
-							<img src="./img/kids/kids1.jpg" alt="">
+							<img src="{{asset($book->image)}}" alt="">
 						</div>
 						{{-- <div class="carousel-product-preview">
 							<img src="./img/kids/kids2.jpg" alt="">
@@ -45,11 +45,11 @@
 				<!-- Product details -->
 				<div class="col-md-5">
 					<div class="product-details">
-						<h2 class="product-name">Bundles Buku anak</h2>
+						<h2 class="product-name">{{$book->title}}</h2>
 
 						<div>
-							<h3 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h3>
-							<span class="product-available">In Stock : 3</span>
+							<h3 class="product-price">Rp. {{$book->price}} </h3>
+							<span class="product-available">In Stock : {{$book->stock}}</span>
 						</div>
 						<p>Dijual karena tidak laku</p>
 
@@ -67,18 +67,17 @@
 
 						<ul class="product-links">
 							<li>Author</li>
-							<li><a href="#">Tok Dalang</a></li>
+							<li><a href="#">{{$book->author->name}}</a></li>
 						</ul>
 
 						<ul class="product-links">
 							<li>Publisher</li>
-							<li><a href="#">FiziMedia</a></li>
+							<li><a href="#">{{$book->publisher->name}}</a></li>
 						</ul>
 
 						<ul class="product-links">
 							<li>Category:</li>
-							<li><a href="#">Kids</a></li>
-							<li><a href="#">Fiction</a></li>
+							<li><a href="#">{{$book->category->name}}</a></li>
 						</ul>
 
 					</div>

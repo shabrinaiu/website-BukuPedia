@@ -8,7 +8,7 @@
 			<div class="col-md-3 col-xs-12">
 				<div class="header-logo">
 					<a href="#" class="logo">
-						<img src="./img/logo-putih.png" alt="">
+						<img src="{{asset('/img/logo-putih.png')}}" alt="">
 					</a>
 				</div>
 			</div>

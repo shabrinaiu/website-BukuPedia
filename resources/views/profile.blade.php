@@ -1,6 +1,6 @@
 @extends('layouts.account')
 
-@include('partials.breadcrumbs')
+@include('partials.breadcrumbs', ['direct' => 'Profile'])
 
 @section('account-section')
 <!-- PROFILE -->

@@ -2,7 +2,7 @@
 
 @section('section')
 
-@include('partials.breadcrumbs')
+@include('partials.breadcrumbs', ['direct' => 'Store'])
 
 <!-- SECTION -->
 <div class="section">
@@ -115,8 +115,8 @@
 					<!-- /product -->
 
 					<div class="clearfix visible-sm visible-xs"></div>
-<!-- product -->
-<div class="col-md-4 col-xs-6">
+					<!-- product -->
+					<div class="col-md-4 col-xs-6">
 						<div class="product">
 							<div class="product-img">
 								<img src="./img/kids/kids1.jpg" alt="">

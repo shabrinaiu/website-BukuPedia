@@ -62,7 +62,7 @@ class BookController extends Controller
     public function show($id)
     {
         $book = Book::findOrFail($id);
-        return BookResource::collection($book);
+        return view('product', ['book' => $book]);
     }
 
     /**
