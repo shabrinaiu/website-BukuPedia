@@ -1,14 +1,16 @@
 <h2>Laravel 7 E-Commerce Project</h2>
 <p>Please kindly check our <a href="https://youtu.be/qThiCCXAjLg">youtube demo</a></p>
-![Screenshot](Public/Image1.jpeg)
-![Screenshot](Public/Image2.jpeg)
+<p align="center">
+  <img src="public/Image1.jpeg" width="70%">
+  <img src="public/Image2.jpeg" width="70%">
+</p>
 <p>Dev Team :</p>
 <ul>
-    <li>Aditya Indra Pramana</li>
+    <li><a href="https://github.com/Kuasa5Indra">Aditya Indra Pramana</a></li>
     <li>M. Gilang</li>
     <li>Goldy Najma</li>
-    <li>Sabila Jamal</li>
-    <li>Ulima Inas Shabrina</li>
+    <li><a href="https://github.com/sabsabila">Sabila Jamal</a></li>
+    <li><a href="https://github.com/shabrinaiu">Ulima Inas Shabrina</a></li>
 </ul>
 <h2>How to use :</h2>
 <ul>
