@@ -1,5 +1,7 @@
 <h2>Laravel 7 E-Commerce Project</h2>
 <p>Please kindly check our <a href="https://youtu.be/qThiCCXAjLg">youtube demo</a></p>
+![Screenshot](Public/Image1.jpeg)
+![Screenshot](Public/Image2.jpeg)
 <p>Dev Team :</p>
 <ul>
     <li>Aditya Indra Pramana</li>
