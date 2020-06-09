@@ -11,6 +11,7 @@
             <div class="col-half">Shipping Info</div>
             <div class="col-half">Order Info</div>
         </div>
+
         @foreach ($lists as $list)
             <!-- table list -->
             <div class="col-md-12 layout-inline row">
@@ -35,6 +36,7 @@
             </div>
             <!-- table list -->
         @endforeach
+
     </div>
 </div>
 @endsection

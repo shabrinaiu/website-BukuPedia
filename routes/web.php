@@ -20,6 +20,7 @@ Route::get('/checkout', 'CartController@checkout')->middleware('auth');
 
 Route::post('/place-order', 'CartController@placeOrder')->middleware('auth');
 
+
 Route::get('/product/{id}', 'BookController@show')->middleware('auth');
 
 Route::post('/product/add-to-cart', 'CartController@addToCart')->middleware('auth');
@@ -63,11 +64,13 @@ Route::get('/about', function () {
 
 Route::get('/admin/order-list', 'OrderController@orderList')->middleware('auth');
 
+
 Route::get('/profile', function () {
     return view('account/profile');
 })->middleware('auth');
 
 Route::get('/order-history', 'OrderController@orderHistory')->middleware('auth');
+
 
 Route::get('/register', 'AuthController@register')->middleware('guest');
 

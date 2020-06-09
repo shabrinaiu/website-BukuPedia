@@ -19,6 +19,7 @@
                     <div class="col-half">Shipping Info</div>
                     <div class="col-half">Product Info</div>
                 </div>
+
                 {{$lists->links()}}
                 @foreach ($lists as $list)
                     <!-- table list -->
@@ -44,6 +45,7 @@
                     </div>
                     <!-- table list -->
                 @endforeach
+
             </div> 
         </div>    
     </div>

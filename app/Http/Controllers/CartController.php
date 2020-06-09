@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+
 use App\OrderList;
 use App\User;
 use App\Book;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
@@ -82,4 +84,5 @@ class CartController extends Controller
         DB::table('book_user')->where('users_id', Auth::user()->id)->delete();
         return redirect('/order-history');
     }
+
 }

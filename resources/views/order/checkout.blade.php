@@ -9,7 +9,9 @@
 		<!-- row -->
 		<div class="row">
 			<div class="col-md-7">
+
 				<form action="/place-order" method="post">
+
 					{{ csrf_field() }}
 					<!-- Shipping Details -->
 					<div class="billing-details">
@@ -17,6 +19,7 @@
 							<h3 class="title">Shipping Order</h3>
 						</div>
 						<div class="form-group">
+
 							<input name="firstName" class="input" type="text" placeholder="First Name">
 						</div>
 						<div class="form-group">
@@ -36,13 +39,16 @@
 						</div>
 						<div class="form-group">
 							<input name="phone" class="input" type="text" placeholder="Phone Number">
+
 						</div>
 					</div>
 					<!-- /Shipping Details -->
 
 					<!-- Order notes -->
 					<div class="order-notes">
+
 						<textarea class="input" placeholder="Order Notes" name="notes"></textarea>
+
 					</div>
 					<!-- /Order notes -->
 				</div>
